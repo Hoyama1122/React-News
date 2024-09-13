@@ -1,16 +1,15 @@
-import { FaRegNewspaper, FaBars } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { FaRegNewspaper, FaBars, FaApple } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { FaHome, FaCar, FaBriefcase, FaRocket } from "react-icons/fa"; // Import specific icons
-
+import { FaHome, FaCar, FaRocket } from "react-icons/fa"; // Import specific icons
 const Navlink = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const navitem = [
     { path: "/", name: "Home", icon: <FaHome /> },
     { path: "/tesla", name: "Tesla", icon: <FaCar /> },
-    { path: "/business", name: "Business", icon: <FaBriefcase /> },
+    { path: "/apple", name: "Apple", icon: <FaApple /> },
     { path: "/techcrunch", name: "TechCrunch", icon: <FaRocket /> },
   ];
 
@@ -23,12 +22,15 @@ const Navlink = () => {
     <>
       <header className="bg-black">
         <nav className="px-4 py-4 flex justify-between items-center">
-          <a className="text-3xl font-bold text-white flex items-center gap-2">
+          <Link
+            to="/"
+            className="text-3xl font-bold text-white flex items-center gap-2"
+          >
             News
             <span>
               <FaRegNewspaper color="orange" />
             </span>
-          </a>
+          </Link>
 
           {/* navitem for lg (large screens) */}
           <ul className="hidden md:flex gap-12 text-lg text-white capitalize">

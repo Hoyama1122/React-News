@@ -8,9 +8,10 @@ import {
 } from "react-router-dom";
 import App from './App';
 import Tesla from './page/Tesla';   // Import Tesla component
-import Business from './page/Business'; // Placeholder
+
 import TechCrunch from './page/TechCrunch'; // Placeholder
 import Home from './page/Home';
+import Apple from './page/Apple';
 // Define the router with routes
 const router = createBrowserRouter([
   {
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
         element: <Tesla />,
       },
       {
-        path: "business",
-        element: <Business />,
+        path: "apple",
+        element: <Apple />,
       },
       {
         path: "techcrunch",

@@ -8,17 +8,17 @@ const Home = () => {
       <div className="bg-black text-white py-16 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold mb-4">
-            Welcome to News Portal
+            Your Ultimate Source for Breaking News
           </h1>
           <p className="text-lg mb-8">
-            Stay updated with the latest news across various industries including Technology, Business, and more.
+            Discover the hottest stories from the world of technology, business, and beyond. Stay informed, stay ahead.
           </p>
           <div>
             <Link to="/tesla" className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 mr-4">
-              Tesla News
+              Latest Tesla Insights
             </Link>
             <Link to="/business" className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600">
-              Business News
+              Apple Headlines You Can't Miss
             </Link>
           </div>
         </div>
@@ -30,19 +30,19 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <Link to="/tesla" className="bg-white shadow-md rounded-lg p-6 text-center hover:bg-gray-100">
             <h3 className="text-xl font-semibold mb-2">Tesla</h3>
-            <p>Get the latest updates on Tesla and electric vehicles.</p>
+            <p>Stay ahead with breaking news on Tesla and the electric vehicle revolution.</p>
           </Link>
-          <Link to="/business" className="bg-white shadow-md rounded-lg p-6 text-center hover:bg-gray-100">
-            <h3 className="text-xl font-semibold mb-2">Business</h3>
-            <p>Stay informed about business news and market trends.</p>
+          <Link to="/apple" className="bg-white shadow-md rounded-lg p-6 text-center hover:bg-gray-100">
+            <h3 className="text-xl font-semibold mb-2">Apple</h3>
+            <p>Dive into the latest market insights and Apple’s innovative breakthroughs.</p>
           </Link>
           <Link to="/techcrunch" className="bg-white shadow-md rounded-lg p-6 text-center hover:bg-gray-100">
             <h3 className="text-xl font-semibold mb-2">TechCrunch</h3>
-            <p>Catch up with the latest in technology and innovation.</p>
+            <p>Keep your finger on the pulse of cutting-edge tech and innovation.</p>
           </Link>
           <Link to="/" className="bg-white shadow-md rounded-lg p-6 text-center hover:bg-gray-100">
             <h3 className="text-xl font-semibold mb-2">More</h3>
-            <p>Explore other categories for more exciting content.</p>
+            <p>Discover even more news categories packed with exciting stories.</p>
           </Link>
         </div>
       </div>
@@ -51,13 +51,13 @@ const Home = () => {
       <div className="bg-orange-500 text-white py-16 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Never Miss an Update
+            Stay Ahead of the Curve
           </h2>
           <p className="text-lg mb-8">
-            Subscribe to our newsletter to get the latest news delivered directly to your inbox.
+            Don’t just keep up—lead the conversation! Get our top stories delivered straight to your inbox.
           </p>
           <button className="bg-white text-orange-500 px-6 py-3 rounded-md hover:bg-gray-100">
-            Subscribe Now
+            Get Instant Updates
           </button>
         </div>
       </div>

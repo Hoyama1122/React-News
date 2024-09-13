@@ -14,7 +14,7 @@ const Tesla = () => {
   const FetchData = async () => {
     try {
       const res = await axios.get(
-        `https://newsapi.org/v2/everything?q=tesla&from=2024-08-09&sortBy=publishedAt&apiKey=d98cb21a5c014f519e559fad0563246f`
+        `https://newsapi.org/v2/everything?q=tesla&from=2024-08-12&sortBy=publishedAt&apiKey=d98cb21a5c014f519e559fad0563246f`
       );
       setData(res.data.articles);
       setLoading(false);
@@ -67,7 +67,7 @@ const Tesla = () => {
                 >
                   <div className="flex items-center justify-center gap-2">
                     Read More
-                    <FaArrowCircleRight className="transform hover:translate-x-2 transition-transform duration-300" />
+                    <FaArrowCircleRight />
                   </div>
                 </a>
               </div>
